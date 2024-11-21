@@ -1,0 +1,63 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Task Container */
+.task-container {
+  margin: 2rem auto;
+  padding: 2rem;
+  width: 90%;
+  max-width: 800px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-color: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+/* Input Field */
+.task-input {
+  width: 60%;
+  margin-bottom: 1rem;
+}
+
+/* Button */
+.task-button {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Task List */
+.task-list {
+  width: 100%;
+  margin-top: 1rem;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.task-list li {
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .task-container {
+      flex-direction: column;
+  }
+
+  .task-input {
+      width: 100%;
+  }
+
+  .task-button {
+      width: 100%;
+      margin-left: 0;
+  }
+}
